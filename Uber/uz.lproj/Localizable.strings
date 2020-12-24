@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  Uber
+
+  Created by Asliddin Rasulov on 23/12/20.
+  
+*/
+
+"password" = "Parolni kiriting";
+"log_in" = "Kirish";
+"dont_have_an_account" = "Akkauntingiz yo'qmi?  ";
+"sign_up" = "Ro'yxatdan o'tish";
+"fullname" = "Ism familyangiz";
+"already_have_an_account" = "Akkauntingiz bormi?  ";
+"enter_code" = "Kodni kiriting";
+"code" = "kod";
+"edit" = "Tahrirlash";
+"mardex_message" = "Sizga kodni SMS orqali yubordik. Iltimos, kelgan kodni kiriting";
+"next_verify" = "Davom etish";
+"order" = "Buyurtma";
+"menu1" = "";
+"menu2" = "";
+"menu3" = "Promo kod";
+"menu4" = "Til";
+"menu5" = "Yordam";
+"menu6" = "Ma`lumot";
+"previous" = "⟨ oldingi";
+"next" = "keyingi ⟩";
+"about" = "Ishchi haqida";
+
+
+
