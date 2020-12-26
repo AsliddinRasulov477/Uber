@@ -108,14 +108,6 @@ class LoginController: UIViewController {
                 guard let controller = UIApplication.shared.keyWindow?.rootViewController
                         as? HomeController else { return }
                 controller.configure()
-                switch UserDefaults.standard.string(forKey: "authorizationStatus") {
-                case "denied":
-                    DispatchQueue.main.async {
-                        controller.deniedAuthorization()
-                    }
-                default: controller.hasLocationPermission()
-                }
-                
                 self.dismiss(animated: true, completion: nil)
             }
         }

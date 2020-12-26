@@ -6,11 +6,12 @@
       "scale" : "1x"
     },
     {
+      "filename" : "Webp.net-resizeimage-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Webp.net-resizeimage-2.png",
+      "filename" : "worker.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

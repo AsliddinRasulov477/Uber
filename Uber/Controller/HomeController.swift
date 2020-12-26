@@ -91,6 +91,7 @@ class HomeController: UIViewController  {
     // MARK: - Helper Functions
     
     func configure() {
+        hasLocationPermission()
         configureMapView()
         configureBurger()
         configurOrderHeaderView()
@@ -112,13 +113,15 @@ class HomeController: UIViewController  {
     func configureMenu() {
         fetchUserData { [self] (success) in
             if success {
-                menu = SideMenuNavigationController(
-                    rootViewController: MenuListController(
-                        menuItemsText: user.name, menuItemsImage: #imageLiteral(resourceName: "fullname").withTintColor(.label),
-                        menuPhoneNumber: user.phone
-                    )
+                let rootVC = MenuListController(
+                    menuItemsText: user.name,
+                    menuItemsImage: #imageLiteral(resourceName: "fullname").withTintColor(.label),
+                    menuPhoneNumber: user.phone
                 )
             
+                menu = SideMenuNavigationController(
+                    rootViewController: rootVC
+                )
                 menu?.leftSide = true
                 menu?.menuWidth = 0.6 * view.frame.width
                 menu?.setNavigationBarHidden(true, animated: true)
@@ -205,6 +208,7 @@ extension HomeController: CLLocationManagerDelegate {
                 locationManager.requestWhenInUseAuthorization()
             case .restricted, .denied:
                 UserDefaults.standard.setValue("denied", forKey: "authorizationStatus")
+                deniedAuthorization()
             case .authorizedWhenInUse:
                 locationManager.requestAlwaysAuthorization()
                 UserDefaults.standard.setValue("authorizedWhenInUse", forKey: "authorizationStatus")
@@ -233,7 +237,6 @@ extension HomeController: CLLocationManagerDelegate {
         }
     }
 }
-
 
 // MARK: - OrderHeaderViewDelegate
 

@@ -24,9 +24,9 @@
 		8C3464AF259199B600BBE61C /* MenuListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3464AE259199B600BBE61C /* MenuListController.swift */; };
 		8C3464CF25933A0100BBE61C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C3464D125933A0100BBE61C /* Localizable.strings */; };
 		8C3464DB2593608A00BBE61C /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3464DA2593608A00BBE61C /* LocalizationSystem.swift */; };
+		8C3464DF2594550A00BBE61C /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3464DE2594550900BBE61C /* LanguageViewController.swift */; };
 		8C5927FB256F7E0B00E69172 /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5927FA256F7E0B00E69172 /* Worker.swift */; };
 		8C97C16125808B3D00DA303D /* ChangeWorkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C97C16025808B3D00DA303D /* ChangeWorkerView.swift */; };
-		8CA2FD86256D30D300FBD927 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CA2FD85256D30D300FBD927 /* GoogleService-Info.plist */; };
 		8CADEDA22572320900722E1A /* WorkerMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CADEDA12572320900722E1A /* WorkerMainCell.swift */; };
 		8CB29CB4256D2C0B00340BFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB29CB3256D2C0B00340BFB /* AppDelegate.swift */; };
 		8CB29CC0256D2C0D00340BFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CB29CBE256D2C0D00340BFB /* LaunchScreen.storyboard */; };
@@ -76,9 +76,9 @@
 		8C3464D225933A1900BBE61C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C3464D425933A2400BBE61C /* uz */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uz; path = uz.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C3464DA2593608A00BBE61C /* LocalizationSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		8C3464DE2594550900BBE61C /* LanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		8C5927FA256F7E0B00E69172 /* Worker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
 		8C97C16025808B3D00DA303D /* ChangeWorkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeWorkerView.swift; sourceTree = "<group>"; };
-		8CA2FD85256D30D300FBD927 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CADEDA12572320900722E1A /* WorkerMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerMainCell.swift; sourceTree = "<group>"; };
 		8CB29CB0256D2C0B00340BFB /* Uber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB29CB3256D2C0B00340BFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,7 +166,6 @@
 				8CB29CF8256D2C4500340BFB /* Utils */,
 				8CB29CB3256D2C0B00340BFB /* AppDelegate.swift */,
 				8C3464742590619700BBE61C /* Assets.xcassets */,
-				8CA2FD85256D30D300FBD927 /* GoogleService-Info.plist */,
 				8CB29CC1256D2C0D00340BFB /* Info.plist */,
 			);
 			path = Uber;
@@ -205,6 +204,7 @@
 				8CEF20F7258C70BD005F4D52 /* Onboarding */,
 				8C0A53EA2577C8000077B98C /* HomeController.swift */,
 				8C3464AE259199B600BBE61C /* MenuListController.swift */,
+				8C3464DE2594550900BBE61C /* LanguageViewController.swift */,
 				8C0A53D52576A67A0077B98C /* ProfessionsView.swift */,
 				8C10817D256E17A200FD51DC /* WorkersView.swift */,
 			);
@@ -359,7 +359,6 @@
 				8C3464752590619700BBE61C /* Assets.xcassets in Resources */,
 				8CFC7DCB2584E2010003E0AC /* SpartanMB-ExtraLight.otf in Resources */,
 				8CEF20EE258C65C3005F4D52 /* Main.storyboard in Resources */,
-				8CA2FD86256D30D300FBD927 /* GoogleService-Info.plist in Resources */,
 				8CFC7DCD2584E2010003E0AC /* SpartanMB-Medium.otf in Resources */,
 				8CB29CC0256D2C0D00340BFB /* LaunchScreen.storyboard in Resources */,
 				8CFC7DC92584E2010003E0AC /* SpartanMB-SemiBold.otf in Resources */,
@@ -446,6 +445,7 @@
 				8CFC7DED25867A800003E0AC /* User.swift in Sources */,
 				8C108181256E27CD00FD51DC /* ProfessionsTableCell.swift in Sources */,
 				8C3464A92591998300BBE61C /* MenuCell.swift in Sources */,
+				8C3464DF2594550A00BBE61C /* LanguageViewController.swift in Sources */,
 				8C3464AC2591998B00BBE61C /* MenuTitleCell.swift in Sources */,
 				8C3464AF259199B600BBE61C /* MenuListController.swift in Sources */,
 				8CB29CB4256D2C0B00340BFB /* AppDelegate.swift in Sources */,

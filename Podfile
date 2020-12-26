@@ -12,6 +12,5 @@ target 'Uber' do
 	pod 'SwiftyJSON'
   pod 'SideMenu'
   pod 'SDWebImage'
-  pod 'KYAnimatedPageControl'
 
 end

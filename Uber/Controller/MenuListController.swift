@@ -44,6 +44,10 @@ class MenuListController : UITableViewController   {
         
         configureMenuCellData()
         
+        tableView.bounces = false
+        tableView.bouncesZoom = false
+        tableView.isScrollEnabled = false
+        
         tableView.separatorColor = .clear
         tableView.backgroundColor = .systemBackground
         
@@ -92,7 +96,9 @@ class MenuListController : UITableViewController   {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if indexPath.row == 8 {
+            
+        }
     }
     
     

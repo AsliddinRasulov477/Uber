@@ -72,6 +72,7 @@ class WorkerMainCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         fullnameLabel.text = nil
+        phoneLabel.text = nil
         profilePhoto.image = nil
     }
     
